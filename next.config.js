@@ -3,16 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: `/${process.env.REACT_HASH}`,
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: "/",
-  //       destination: `/${process.env.REACT_HASH}`,
-  //       permanent: true,
-  //     },
-  //   ];
-  // },
+  assetPrefix: `https://he-ide.hackerearth.com/${process.env.REACT_HASH}`,
 };
 
 module.exports = nextConfig;

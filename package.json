@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 5000",
+    "dev": "next dev --port 8000",
     "build": "next build",
-    "start": "next start --port 5000",
+    "start": "next start --port 8000",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "export": "next export",
+    "mongo": "sh run.sh"
   },
   "dependencies": {
     "axios": "^0.27.2",

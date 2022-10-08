@@ -2,8 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import styles from "../styles/Home.module.css";
 
-export const getServerSideProps = async () => {
-  const url = `http://localhost:5000/${process.env.REACT_HASH}/api/task`;
+export const getServerSideProps = async (context) => {
+  const url = `https://he-ide.hackerearth.com/${process.env.REACT_APP_HASH}/api/task`;
   const { data } = await axios.get(url);
   return {
     props: {
@@ -76,7 +76,6 @@ export default function Home(props) {
       console.log(error);
     }
   };
-
   return (
     <main className={styles.main}>
       <h1 className={styles.heading}>TO-DO</h1>
